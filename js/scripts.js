@@ -4,7 +4,7 @@
 const playButton = document.getElementById("playButton")
 const difficultySelector = document.getElementById("difficultySelector")
 const gameContainer = document.getElementById("gameContainer")
-let chosenDifficulty = 0;
+
 
 playButton.addEventListener("click", function () {
   //Cancellare le celle precedenti
@@ -13,5 +13,4 @@ playButton.addEventListener("click", function () {
   cellsCount = cellsCounter(chosenDifficulty);
   cellsGenerator();
 
-  //Colorare la cella cliccata di azzurro
 })
