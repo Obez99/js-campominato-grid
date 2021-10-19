@@ -29,8 +29,17 @@ function cellsGenerator() {
   const cellSize = 100 / cellsPerRow;
 
   for (let i = 0; i < cellsCount; i++) {
-    const cell = `<div class='cell' style='width: ${cellSize}% ; height: ${cellSize}% '>${i + 1}</div>`;
-    gameContainer.innerHTML += cell;
+    const cell = document.createElement("div");
+    cell.classList.add("cell");
+    cell.style.width = cellSize + "%";
+    cell.style.height = cellSize + "%";
+    cell.append(i + 1);
+    gameContainer.append(cell);
+    cell.addEventListener("click", cellClick)
   }
 
+}
+
+function cellClick() {
+  this.classList.toggle("cell_active")
 }

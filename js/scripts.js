@@ -5,7 +5,6 @@ const playButton = document.getElementById("playButton")
 const difficultySelector = document.getElementById("difficultySelector")
 const gameContainer = document.getElementById("gameContainer")
 
-
 playButton.addEventListener("click", function () {
   //Cancellare le celle precedenti
   //Convertire il valore nel numero di celle che dovranno essere stampate
@@ -14,3 +13,5 @@ playButton.addEventListener("click", function () {
   cellsGenerator();
 
 })
+
+
