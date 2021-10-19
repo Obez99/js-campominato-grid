@@ -6,15 +6,19 @@
 
 body{
   font-family: 'Work Sans', sans-serif;
+  background-color: lightgrey;
+}
+
+header, footer{
+  padding: 20px;
+  cursor:default;
 }
 
 header{
-  background-color: lightgrey;
   padding: 20px;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  cursor:default;
 }
 
 main{
@@ -22,7 +26,6 @@ main{
   display: flex;
   justify-content: center;
 }
-
 
 .btn_select{
   width: 200px;
